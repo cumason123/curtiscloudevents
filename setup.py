@@ -39,6 +39,6 @@ setuptools.setup(
         "Programming Language :: Python :: 3.7",
         "Programming Language :: Python :: 3.8",
     ],
-    packages=["cloudevents"],
+    packages=["cloudevents", "cloudevents.sdk", "cloudevents.http"],
     version=pypi_config["version_target"],
 )
