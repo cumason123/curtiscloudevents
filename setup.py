@@ -11,7 +11,7 @@
 #    WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the
 #    License for the specific language governing permissions and limitations
 #    under the License.
-from pypi_packaging import pypi_config
+from pypi_packaging import pypi_config, find_packages
 
 import setuptools
 
@@ -39,6 +39,6 @@ setuptools.setup(
         "Programming Language :: Python :: 3.7",
         "Programming Language :: Python :: 3.8",
     ],
-    packages=["cloudevents", "cloudevents.sdk", "cloudevents.http"],
+    packages=find_packages(),
     version=pypi_config["version_target"],
 )
