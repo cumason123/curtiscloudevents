@@ -97,39 +97,3 @@ if __name__ == "__main__":
 ```
 
 You can find a complete example of turning a CloudEvent into a HTTP request [in the samples directory](samples/http-json-cloudevents/server.py).
-
-## SDK versioning
-
-The goal of this package is to provide support for all released versions of CloudEvents, ideally while maintaining
-the same API. It will use semantic versioning with following rules:
-
-- MAJOR version increments when backwards incompatible changes is introduced.
-- MINOR version increments when backwards compatible feature is introduced INCLUDING support for new CloudEvents version.
-- PATCH version increments when a backwards compatible bug fix is introduced.
-
-## Community
-
-- There are bi-weekly calls immediately following the [Serverless/CloudEvents
-  call](https://github.com/cloudevents/spec#meeting-time) at
-  9am PT (US Pacific). Which means they will typically start at 10am PT, but
-  if the other call ends early then the SDK call will start early as well.
-  See the [CloudEvents meeting minutes](https://docs.google.com/document/d/1OVF68rpuPK5shIHILK9JOqlZBbfe91RNzQ7u_P7YCDE/edit#)
-  to determine which week will have the call.
-- Slack: #cloudeventssdk channel under
-  [CNCF's Slack workspace](https://slack.cncf.io/).
-- Email: https://lists.cncf.io/g/cncf-cloudevents-sdk
-- Contact for additional information: Denis Makogon (`@denysmakogon` on slack).
-
-## Maintenance
-
-We use black and isort for autoformatting. We setup a tox environment to reformat
-the codebase.
-
-e.g.
-
-```python
-pip install tox
-tox -e reformat
-```
-
-For information on releasing version bumps see [RELEASING.md](RELEASING.md)
