@@ -22,7 +22,7 @@ def get_version(rel_path):
 # FORMAT: 1.x.x
 pypi_config = {
     "version_target": get_version("cloudevents/__init__.py"),
-    "package_name": "cloudevents",
+    "package_name": "curtiscloudevents",
 }
 
 
